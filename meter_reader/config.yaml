@@ -1,0 +1,29 @@
+paths:
+  public_data: data/WMeter5K
+  field_images: data/field_images
+  prepared: data/prepared
+  predictions: outputs/predictions
+  training: outputs/training
+  wmeter_source: references/WMeter-Reader
+  rtdetr_source: references/RT-DETR/rtdetrv2_pytorch
+  openocr_source: references/OpenOCR
+  pointer_weights: weights/wmeter
+  detector_pretrained: weights/detector/coco_r18.pth
+  detector_weights: weights/detector/meter.pt
+  geometry_weights: weights/geometry.pt
+  wheel_pretrained: weights/wheel/openocr_svtrv2_ch.pth
+  wheel_weights: weights/wheel/meter.pt
+  skip_images: docs/skip_images.txt
+device: cpu
+threads: 4
+detector:
+  size: 640
+  threshold: 0.45
+  nms_iou: 0.4
+geometry:
+  padding: 0.35
+  weight_threshold: 0.9
+wheel:
+  threshold: 0.85
+pointer:
+  threshold: 0.8

@@ -1,0 +1,18 @@
+# Install torch/torchvision for the actual CPU/CUDA platform separately.
+numpy==1.26.4
+opencv-python==4.11.0.86
+PyYAML==6.0.3
+scipy
+faster-coco-eval
+pycocotools
+tensorboard
+lmdb
+imgaug
+pyclipper
+rapidfuzz
+regex
+tqdm
+streamlit
+einops
+timm
+psutil
